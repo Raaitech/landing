@@ -2,9 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
+## Requirements
+
+- Angular CLI: 16.2.10
+- Node: 18.17.1
+- Package Manager: npm 9.6.7
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Run `npm install` to install dependencies.
+2. Run `ng serve` for a dev server. 
+3. Navigate to `http://localhost:4200/`. 
+
+The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
