@@ -1,26 +1,35 @@
-<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-  <div class="mb-3">
-    <label for="name" class="form-label">Nombre</label>
-    <input type="text" class="form-control" id="name" formControlName="name" />
+<div id="form-container" class="bg-image p-5">
+  <h1 id="title" class="mb-5">Trabajemos juntos</h1>
+
+  <div id="container">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="row mb-4">
+        <div class="col-lg-6">
+          <label for="name" class="form-label d-none">Nombre</label>
+          <input type="text" class="form-control" id="name" formControlName="name" placeholder="Nombre y Apellido" />
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-lg-6">
+          <label for="exampleInputEmail1" class="form-label d-none">Correo</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            formControlName="email" placeholder="Correo electrónico" />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <label for="message" class="form-label d-none">Mensaje</label>
+          <textarea class="form-control" id="message" rows="3" formControlName="message"
+            placeholder="Cuentanos más acerca de tus necesidades..."></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-grid gap-2 col-2">
+          <button id="send-btn" type="submit" class="btn">Enviar</button>
+        </div>
+      </div>
+    </form>
   </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Correo</label>
-    <input
-      type="email"
-      class="form-control"
-      id="exampleInputEmail1"
-      aria-describedby="emailHelp"
-      formControlName="email"
-    />
-  </div>
-  <div class="mb-3">
-    <label for="message" class="form-label">Mensaje</label>
-    <textarea
-      class="form-control"
-      id="message"
-      rows="3"
-      formControlName="message"
-    ></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
+
+</div>

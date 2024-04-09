@@ -1,0 +1,33 @@
+#form-container {
+  background-image: url("/assets/img/background-form.png");
+  height: 80vh;
+}
+#title {
+  color: #fff;
+  font-size: 58px;
+}
+#send-btn {
+  background: #d6e3fd;
+  height: 58px;
+  font-size: 21px;
+}
+form input,
+textarea {
+  background: transparent;
+  border-color: #c2c2c2;
+  color: #c2c2c2;
+}
+form input,
+button,
+textarea {
+  border-radius: 15px;
+}
+form input {
+  height: 60px;
+}
+::placeholder {
+  color: #c2c2c2;
+}
+textarea {
+  height: 100px;
+}
